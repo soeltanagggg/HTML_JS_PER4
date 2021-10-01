@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            LATIHAN PERULANGAN III(DO-WHILE)
+        </title>
+    </head>
+    <body>
+        <script language="JavaScript">
+            {
+                var coba = 1;
+                do
+                {
+                p = prompt("Tuliskan password dengan benar","");
+                    if (p=="Amikom")
+                    {
+                        alert("Selamat Datang Friends");
+                        window.open("contoh perulangan for.html");
+                        break;
+                    }
+                    else
+                    {
+                        alert("passwor Salah!!!, silahkan ulangi kembali");
+                    }
+                    if (coba==3)
+                    {
+                        alert("maaf, kesempatan anda hanya 3 kali");
+                        history.go(-1);
+                    }
+                    coba = coba+1;
+                }
+                while(coba<=3)
+            }
+        </script>
+        <form method="POST">
+            <input type="button" value="Password" onclick="Pass()">
+        </form>
+    </body>
+</html>
